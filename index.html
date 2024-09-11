@@ -17,9 +17,22 @@
         font-weight: 400;
         font-style: normal;
       }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center; /* Optional: Center vertically as well */
+        height: 100vh; /* Optional: Set height to viewport height */
+      }
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: lightblue;
+      }
     </style>
   </head>
   <body>
-    Hello World
+    <div class="container">
+      <div class="box">Centered</div>
+    </div>
   </body>
 </html>
