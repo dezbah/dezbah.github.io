@@ -6,20 +6,38 @@
     <title>Using Lordina Sketch</title>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Londrina+Sketch&display=swap");
-      body {
+      body,
+      html {
+        margin: 0;
+        height: 100%;
         font-family: "Lordina Sketch", sans-serif;
         font-weight: 400;
         font-style: normal;
         font-size: 100px;
+        display: flex;
+        flex-direction: column;
       }
       .container {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        flex: 1;
       }
       .box {
         background-color: lightblue;
+      }
+      .logos {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+      }
+      .logo {
+        margin: 0 10px;
+        border-radius: 50%;
+      }
+      .logo img {
+        width: 50px;
+        height: 50px;
       }
     </style>
   </head>
@@ -28,6 +46,28 @@
       <div class="box">
         <div></div>
         <div>hi, my name is dezbah</div>
+      </div>
+    </div>
+    <div class="logos">
+      <div class="logo">
+        <a href="https://www.linkedin.com/in/dezbah/"
+          ><img src="images/linkedin.svg" alt="linkedin"
+        /></a>
+      </div>
+      <div class="logo">
+        <a href="mailto:dezbah@gmail.com"
+          ><img src="images/email.png" alt="email"
+        /></a>
+      </div>
+      <div class="logo">
+        <a href="https://x.com/dezbah"
+          ><img src="images/icon.png" alt="twitter"
+        /></a>
+      </div>
+      <div class="logo">
+        <a href="https://github.com/dezbah"
+          ><img src="images/github-mark.png" alt="github"
+        /></a>
       </div>
     </div>
   </body>
